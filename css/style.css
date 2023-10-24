@@ -1,7 +1,14 @@
+.fixedForNavigation {
+  height: 50px;
+}
+/*navigation==============================================================*/
 .navigation {
   height: 50px;
   background-color: #212121;
   color:white;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 .nav_menu {
@@ -22,7 +29,12 @@
   border-right: 2px dotted rgb(0, 0, 0); 
   padding-right: 45px;
 }
+
+/*subheader==============================================================*/
+
 .subheader {
+  position: absolute;
+  width: 100%;
   height: 87px;
   background-color: rgba(0,0,0,0.6);
 }
@@ -66,7 +78,7 @@
   width: 172px;
   height: 46px;
   border-radius: 4px;
-  background: #4CE2FF;
+  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
   border: none;
   cursor:pointer;
 
@@ -76,5 +88,65 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
+  text-transform: uppercase;
+}
+
+/*promo==============================================================*/
+
+.promo {
+  min-height: 800px;
+  padding-top: 200px;
+  background: url('../img/bg/promo_uber_bg.png') center center/cover no-repeat;
+}
+
+.promo_header{
+  color: #FFF;
+  text-align: center;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.promo_subheader{
+  color: #FFF;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.promo_text {
+  margin-top: 20px;
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}
+
+.promo_btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 115px;
+  width: 259px;
+  height: 63px;
+  border-radius: 4px;
+  border:none;
+  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+  box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.12) inset;
+  cursor:pointer;
+
+  color: #FFF;
+  text-align: center;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 63px; /* 350% */
   text-transform: uppercase;
 }
