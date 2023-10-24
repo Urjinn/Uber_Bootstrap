@@ -1,25 +1,20 @@
 .fixedForNavigation {
   height: 50px;
 }
-
 /*navigation==============================================================*/
 .navigation {
   height: 50px;
   background-color: #212121;
-  color: white;
+  color:white;
   position: fixed;
   width: 100%;
   z-index: 10;
 }
 
 .nav_menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 15px 70px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .nav_menu .menu_link {
@@ -31,25 +26,25 @@
 }
 
 .nav_menu .menu_item {
-  border-right: 2px dotted black;
+  border-right: 2px dotted rgb(0, 0, 0); 
   padding-right: 45px;
 }
 
 /*subheader==============================================================*/
+
 .subheader {
   position: absolute;
   width: 100%;
   height: 87px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0,0,0,0.6);
 }
-
 .subheader .subheader_logo {
   display: block;
   margin-top: 15px;
   max-width: 100%;
 }
 
-.subheader_text {
+.subheader_text{
   margin-top: 5px;
   color: #FFF;
   font-size: 13px;
@@ -76,7 +71,6 @@
   font-weight: 400;
   text-decoration: none;
 }
-
 .subheader_btn {
   display: block;
   margin: 0 auto;
@@ -84,10 +78,10 @@
   width: 172px;
   height: 46px;
   border-radius: 4px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#1EACC7), to(#4CE2FF));
   background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
   border: none;
-  cursor: pointer;
+  cursor:pointer;
+
   color: #FFF;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
   text-align: center;
@@ -98,13 +92,14 @@
 }
 
 /*promo==============================================================*/
+
 .promo {
   min-height: 800px;
   padding-top: 200px;
-  background: url("../img/bg/promo_uber_bg.png") center center/cover no-repeat;
+  background: url('../img/bg/promo_uber_bg.png') center center/cover no-repeat;
 }
 
-.promo_header {
+.promo_header{
   color: #FFF;
   text-align: center;
   font-size: 60px;
@@ -113,7 +108,7 @@
   text-transform: uppercase;
 }
 
-.promo_subheader {
+.promo_subheader{
   color: #FFF;
   margin-top: 10px;
   text-align: center;
@@ -131,8 +126,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  /* 133.333% */
+  line-height: 24px; /* 133.333% */
 }
 
 .promo_btn {
@@ -142,19 +136,17 @@
   width: 259px;
   height: 63px;
   border-radius: 4px;
-  border: none;
-  background: -webkit-gradient(linear, left bottom, left top, from(#1EACC7), to(#4CE2FF));
+  border:none;
   background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
-  -webkit-box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.12) inset;
-          box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.12) inset;
-  cursor: pointer;
+  box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.12) inset;
+  cursor:pointer;
+
   color: #FFF;
   text-align: center;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 63px;
-  /* 350% */
+  line-height: 63px; /* 350% */
   text-transform: uppercase;
 }
