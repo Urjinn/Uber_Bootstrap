@@ -231,4 +231,88 @@
   font-weight: 400;
 }
 
-/*mobapp=======================================*/
+/*mobapp====================================================================*/
+.mobapp {
+  padding-top: 50px;
+  min-height: 10px;
+  background: url("../img/bg/mobile_cube_grid_bg.png") center center/cover no-repeat;
+}
+.mobapp .row {
+  margin-top: 10px;
+}
+.mobapp_item {
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.mobapp_item-bg1 {
+  background: url("../img/possibilities1.png") center center/cover no-repeat;
+}
+.mobapp_item-bg2 {
+  background: url("../img/possibilities2.png") center center/cover no-repeat;
+}
+.mobapp_item-bg3 {
+  background: url("../img/possibilities3.png") center center/cover no-repeat;
+}
+.mobapp_item-bg4 {
+  background: url("../img/possibilities4.png") center center/cover no-repeat;
+}
+.mobapp_item-bg5 {
+  background: url("../img/possibilities5.png") center center/cover no-repeat;
+}
+.mobapp_item-bg6 {
+  background: url("../img/possibilities6.png") center center/cover no-repeat;
+}
+.mobapp_text {
+  padding-top: 80px;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+  /* 129.167% */
+  text-transform: uppercase;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.mobapp_btn-plus {
+  background-color: #000000;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.mobapp_btn-plus .lineplus-vertical {
+  position: absolute;
+  height: 14px;
+  width: 2px;
+  background-color: #1EACC7;
+  left: 47%;
+}
+.mobapp_btn-plus .lineplus-horizen {
+  height: 2px;
+  width: 14px;
+  background-color: #1EACC7;
+}
