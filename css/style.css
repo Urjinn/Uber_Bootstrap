@@ -1,3 +1,4 @@
+@import url(var_and_mix.scss);
 .fixedForNavigation {
   height: 50px;
 }
@@ -315,4 +316,49 @@
   height: 2px;
   width: 14px;
   background-color: #1EACC7;
+}
+
+/*=Choice========================*/
+.choice {
+  position: relative;
+}
+.choice_order {
+  padding-top: 55px;
+  min-height: 500px;
+  background-color: #070716;
+}
+.choice_car {
+  width: 760px;
+  position: absolute;
+  top: 230px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.choice_car4everyday {
+  min-height: 400px;
+  background: url("../img/bg/mobile_cube_grid_bg.png") center center/cover no-repeat;
+}
+.choice_car4everyday_text {
+  padding-top: 155px;
+  color: #222;
+  text-align: center;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  /* 141.176% */
+}
+
+.label_white {
+  background-color: #fff;
+  color: black;
+}
+
+.title_white {
+  color: white;
+}
+
+.subtitle_white {
+  color: white;
 }
