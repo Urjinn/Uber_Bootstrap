@@ -1,4 +1,4 @@
-@import url(var_and_mix.scss);
+@import 'var_and_mix.scss';
 
 .fixedForNavigation {
   height: 50px;
@@ -91,6 +91,8 @@
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
+
+  @include btn_hover;
 }
 
 /*promo==============================================================*/
@@ -151,6 +153,9 @@
   font-weight: 400;
   line-height: 63px; /* 350% */
   text-transform: uppercase;
+
+  @include btn_hover;
+
 }
 
 /*reasons================================*/
@@ -231,6 +236,7 @@
 
 .mobapp {
   padding-top: 50px;
+  padding-bottom: 50px;
   min-height: 10px;
   background: url('../img/bg/mobile_cube_grid_bg.png') center center/cover no-repeat;
 
@@ -290,16 +296,23 @@
     align-items: center;
     position: relative;
     cursor: pointer;
+    &:hover {
+      .lineplus-vertical, .lineplus-horizen {
+        background-color: $color_red;
+      }
+    }
 
     .lineplus-vertical {
+      transition: 0.35s all;
       position: absolute;
       height: 14px;
       width: 2px;
-      background-color: #1EACC7;
+      background-color: $color_blue;
       left: 47%;
     }
   
     .lineplus-horizen {
+      transition: 0.35s all;
       height: 2px;
       width: 14px;
       background-color: #1EACC7;
@@ -356,3 +369,66 @@
     color: white;
   }
 }
+
+/*=conditions===========================================================================*/
+
+.conditions {
+  padding: 60px 0 60px 0;
+
+  &_block {
+    margin-top: 30px;
+  }
+
+  &_title {
+    color: $color_blue;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  &_list {
+    margin-top: 20px;
+    padding-left: 50px;
+    color: #222;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px; /* 141.176% */
+
+    li {
+      position: relative;
+      padding-top: 5px;
+      &:before {
+        content:'';
+        position: absolute;
+        left: -30px;
+        top: 8px;
+        display: block;
+        width: 21px;
+        height: 20px;
+        background: url('../icons/check_blue.png') center center/cover no-repeat;
+      }
+    }
+  }
+  &_title-red {
+    color: $color_red;
+  }
+  &_list-red li {
+    &:before {
+      content:'';
+      background: url('../icons/check_red.png') center center/cover no-repeat;
+    }
+  }
+}
+
+.conditions {
+  &_descr {
+    margin-top: 20px;
+    color: $color_blue;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px; /* 141.176% */
+  }
+}
+

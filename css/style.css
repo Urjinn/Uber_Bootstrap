@@ -1,4 +1,4 @@
-@import url(var_and_mix.scss);
+/*@include btn_hover;*/
 .fixedForNavigation {
   height: 50px;
 }
@@ -97,6 +97,10 @@
   font-weight: 400;
   text-transform: uppercase;
 }
+.subheader_btn:hover {
+  background-image: none;
+  background-color: #1EACC7;
+}
 
 /*promo==============================================================*/
 .promo {
@@ -158,6 +162,10 @@
   line-height: 63px;
   /* 350% */
   text-transform: uppercase;
+}
+.promo_btn:hover {
+  background-image: none;
+  background-color: #1EACC7;
 }
 
 /*reasons================================*/
@@ -235,6 +243,7 @@
 /*mobapp====================================================================*/
 .mobapp {
   padding-top: 50px;
+  padding-bottom: 50px;
   min-height: 10px;
   background: url("../img/bg/mobile_cube_grid_bg.png") center center/cover no-repeat;
 }
@@ -305,7 +314,12 @@
   position: relative;
   cursor: pointer;
 }
+.mobapp_btn-plus:hover .lineplus-vertical, .mobapp_btn-plus:hover .lineplus-horizen {
+  background-color: #FF5656;
+}
 .mobapp_btn-plus .lineplus-vertical {
+  -webkit-transition: 0.35s all;
+  transition: 0.35s all;
   position: absolute;
   height: 14px;
   width: 2px;
@@ -313,6 +327,8 @@
   left: 47%;
 }
 .mobapp_btn-plus .lineplus-horizen {
+  -webkit-transition: 0.35s all;
+  transition: 0.35s all;
   height: 2px;
   width: 14px;
   background-color: #1EACC7;
@@ -361,4 +377,59 @@
 
 .subtitle_white {
   color: white;
+}
+
+/*=conditions===========================================================================*/
+.conditions {
+  padding: 60px 0 60px 0;
+}
+.conditions_block {
+  margin-top: 30px;
+}
+.conditions_title {
+  color: #1EACC7;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+}
+.conditions_list {
+  margin-top: 20px;
+  padding-left: 50px;
+  color: #222;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  /* 141.176% */
+}
+.conditions_list li {
+  position: relative;
+  padding-top: 5px;
+}
+.conditions_list li:before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 8px;
+  display: block;
+  width: 21px;
+  height: 20px;
+  background: url("../icons/check_blue.png") center center/cover no-repeat;
+}
+.conditions_title-red {
+  color: #FF5656;
+}
+.conditions_list-red li:before {
+  content: '';
+  background: url("../icons/check_red.png") center center/cover no-repeat;
+}
+
+.conditions_descr {
+  margin-top: 20px;
+  color: #1EACC7;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  /* 141.176% */
 }
