@@ -488,3 +488,131 @@
 }
 
 /*=footer===========================================================================*/
+
+.footer {
+  min-height: 160px;
+  padding: 40px;
+  // .footer_divider
+
+  &_divider {
+    width: 300px;
+    height: 4px;
+    background-color: $color_blue;
+    margin: 0 auto;
+  }
+
+  // .footer_wrappers
+
+  &_wrappers {
+    margin-top: 13px;
+    display: flex; 
+  }
+
+  // .footer_wrapper
+
+  &_wrapper {
+    margin: 0 auto;
+    min-height: 10px;
+    width: 33.33333333333%;
+    display: flex;
+  }
+
+  // .footer_social
+
+  &_social {
+    display: flex;
+    align-items: center;
+}
+
+  // .footer_social
+
+  &_social_item {
+    display: block;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius:  100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // .footer_links
+
+  &_links {
+    width: 390px;
+    margin: 0 auto;
+  }
+
+  // .footer_links
+
+  &_links_main {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  // .footer_link
+
+  &_link_main {
+    color: #070716;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  // .footer_links
+
+  &_links_second {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .footer_link
+
+  &_link_second {
+    color: #999;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase; 
+    text-decoration: none;   
+  }
+  &_links_lenguange {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  &_link_lenguange {
+    color: $color_blue;
+    text-align: center;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+
+
+  // .footer_store
+
+  &_store {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  // .footer_store
+
+  &_store_link {
+    display: block;
+    margin-left: 10px;
+  }
+}
+
